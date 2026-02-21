@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tu Nombre | Portfolio</title>
+    <title>Aldana Cáseres| Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/portfolioAldanaCaseres.github.io/style.css">
 </head>
 <body>
     <!-- Barra de navegación -->
@@ -31,7 +31,7 @@
     <section id="inicio" class="hero">
         <div class="hero-content">
             <div class="hero-text">
-                <h1 class="animate-text">Hola, soy <span class="highlight">Tu Nombre</span></h1>
+                <h1 class="animate-text">Hola, soy <span class="highlight">Aldana Cáseres</span></h1>
                 <h2 class="animate-text delay-1">Desarrollador Full Stack & UI Designer</h2>
                 <p class="animate-text delay-2">Transformando ideas en experiencias digitales excepcionales</p>
                 <div class="hero-buttons animate-text delay-3">
@@ -80,126 +80,308 @@
         </div>
     </section>
 
-    <!-- Habilidades -->
-    <section id="habilidades" class="skills">
-        <div class="container">
-            <h2 class="section-title">Mis Habilidades</h2>
+   <!-- Sección de Habilidades - Versión mejorada -->
+<section id="habilidades" class="skills">
+    <div class="container">
+        <h2 class="section-title">Stack Tecnológico</h2>
+        
+        <!-- Filtros de categorías -->
+        <div class="skills-filter">
+            <button class="filter-btn active" data-filter="all">Todos</button>
+            <button class="filter-btn" data-filter="backend">Backend</button>
+            <button class="filter-btn" data-filter="frontend">Frontend</button>
+            <button class="filter-btn" data-filter="databases">Bases de Datos</button>
+            <button class="filter-btn" data-filter="tools">Herramientas</button>
+            <button class="filter-btn" data-filter="ai">IA & Diseño</button>
+        </div>
+
+        <!-- Backend -->
+        <div class="skills-category" data-category="backend">
+            <h3 class="category-title"><i class="fas fa-server"></i> Backend Development</h3>
             <div class="skills-grid">
-                <div class="skill-card">
-                    <i class="fab fa-html5"></i>
-                    <h3>HTML5</h3>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-progress="90"></div>
-                    </div>
+                <div class="skill-card" data-level="90">
+                    <i class="fab fa-java"></i>
+                    <h3>Java</h3>
+                    <p>Spring Boot, Hibernate, Maven</p>
                 </div>
-                <div class="skill-card">
-                    <i class="fab fa-css3-alt"></i>
-                    <h3>CSS3</h3>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-progress="85"></div>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <i class="fab fa-js"></i>
-                    <h3>JavaScript</h3>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-progress="80"></div>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <i class="fab fa-react"></i>
-                    <h3>React</h3>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-progress="75"></div>
-                    </div>
-                </div>
-                <div class="skill-card">
+                <div class="skill-card" data-level="85">
                     <i class="fab fa-node"></i>
                     <h3>Node.js</h3>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-progress="70"></div>
-                    </div>
+                    <p>Express, NestJS, Socket.io</p>
                 </div>
-                <div class="skill-card">
+                <div class="skill-card" data-level="80">
+                    <i class="fab fa-php"></i>
+                    <h3>PHP</h3>
+                    <p>Laravel, Symfony, WordPress</p>
+                </div>
+                <div class="skill-card" data-level="85">
                     <i class="fab fa-python"></i>
                     <h3>Python</h3>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-progress="65"></div>
+                    <p>Django, Flask, FastAPI</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Frontend -->
+        <div class="skills-category" data-category="frontend">
+            <h3 class="category-title"><i class="fas fa-code"></i> Frontend Development</h3>
+            <div class="skills-grid">
+                <div class="skill-card" data-level="95">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML5 & CSS3</h3>
+                    <p>Flexbox, Grid, Animaciones</p>
+                </div>
+                <div class="skill-card" data-level="90">
+                    <i class="fab fa-js"></i>
+                    <h3>JavaScript</h3>
+                    <p>ES6+, React, Vue, Angular</p>
+                </div>
+                <div class="skill-card" data-level="85">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>Diseño UX/UI</h3>
+                    <p>Figma, Adobe XD, Prototipado</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bases de Datos -->
+        <div class="skills-category" data-category="databases">
+            <h3 class="category-title"><i class="fas fa-database"></i> Bases de Datos</h3>
+            <div class="skills-grid">
+                <div class="skill-card" data-level="90">
+                    <i class="fas fa-database"></i>
+                    <h3>MySQL</h3>
+                    <p>Optimización, Stored Procedures</p>
+                </div>
+                <div class="skill-card" data-level="85">
+                    <i class="fas fa-database"></i>
+                    <h3>SQL Server</h3>
+                    <p>T-SQL, SSIS, SSRS</p>
+                </div>
+                <div class="skill-card" data-level="80">
+                    <i class="fas fa-database"></i>
+                    <h3>PostgreSQL</h3>
+                    <p>PL/pgSQL, JSON, PostGIS</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Herramientas -->
+        <div class="skills-category" data-category="tools">
+            <h3 class="category-title"><i class="fas fa-tools"></i> Herramientas & Metodologías</h3>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fab fa-github"></i>
+                    <h3>GitHub</h3>
+                    <p>Actions, Pages, Projects</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-tasks"></i>
+                    <h3>ClickUp</h3>
+                    <p>Gestión ágil de proyectos</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-trello"></i>
+                    <h3>Trello</h3>
+                    <p>Kanban, Automation</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-file-alt"></i>
+                    <h3>Confluence</h3>
+                    <p>Documentación técnica</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-cubes"></i>
+                    <h3>Odoo</h3>
+                    <p>ERP, CRM, Módulos</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-slack"></i>
+                    <h3>Slack</h3>
+                    <p>Integraciones, Bots</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- IA & Diseño -->
+        <div class="skills-category" data-category="ai">
+            <h3 class="category-title"><i class="fas fa-robot"></i> IA & Diseño Creativo</h3>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fas fa-robot"></i>
+                    <h3>Programación con IA</h3>
+                    <p>Copilot, ChatGPT, Claude, Gemini</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>Canva</h3>
+                    <p>Diseño gráfico, Presentaciones</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-pencil-ruler"></i>
+                    <h3>UX/UI Design</h3>
+                    <p>Investigación, Wireframes, Testing</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Sección de Proyectos - Versión mejorada -->
+<section id="proyectos" class="projects">
+    <div class="container">
+        <h2 class="section-title">Proyectos Destacados</h2>
+        
+        <div class="projects-grid">
+            <!-- Proyecto 1: Full Stack -->
+            <div class="project-card featured">
+                <div class="project-image">
+                    <img src="assets/images/proyecto-erp.jpg" alt="Sistema ERP">
+                    <div class="project-overlay">
+                        <span class="project-type">Full Stack</span>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Sistema ERP Personalizado</h3>
+                    <p>Implementación y customización de Odoo para empresa logística</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Odoo</span>
+                        <span>PostgreSQL</span>
+                        <span>JavaScript</span>
+                        <span>XML</span>
+                    </div>
+                    <div class="project-features">
+                        <ul>
+                            <li>✅ Módulos de inventario y facturación</li>
+                            <li>✅ Integración con APIs externas</li>
+                            <li>✅ Reportes personalizados</li>
+                            <li>✅ Migración de datos desde SQL Server</li>
+                        </ul>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn-small"><i class="fab fa-github"></i> Código</a>
+                        <a href="#" class="btn-small"><i class="fas fa-external-link-alt"></i> Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proyecto 2: API REST -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="assets/images/proyecto-api.jpg" alt="API REST">
+                    <div class="project-overlay">
+                        <span class="project-type">Backend</span>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>API REST para E-commerce</h3>
+                    <p>Backend escalable con múltiples bases de datos</p>
+                    <div class="project-tech">
+                        <span>Java</span>
+                        <span>Spring Boot</span>
+                        <span>MySQL</span>
+                        <span>MongoDB</span>
+                        <span>JWT</span>
+                    </div>
+                    <div class="project-features">
+                        <ul>
+                            <li>✅ Autenticación JWT</li>
+                            <li>✅ Documentación Swagger</li>
+                            <li>✅ Tests unitarios JUnit</li>
+                            <li>✅ Despliegue en AWS</li>
+                        </ul>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn-small"><i class="fab fa-github"></i> Código</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proyecto 3: Dashboard UX/UI -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="assets/images/proyecto-dashboard.jpg" alt="Dashboard">
+                    <div class="project-overlay">
+                        <span class="project-type">UX/UI + Frontend</span>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Dashboard Analytics</h3>
+                    <p>Diseño UX/UI y desarrollo frontend</p>
+                    <div class="project-tech">
+                        <span>Figma</span>
+                        <span>React</span>
+                        <span>D3.js</span>
+                        <span>Node.js</span>
+                        <span>Canva</span>
+                    </div>
+                    <div class="project-features">
+                        <ul>
+                            <li>✅ Prototipado interactivo en Figma</li>
+                            <li>✅ Componentes reutilizables</li>
+                            <li>✅ Visualización de datos</li>
+                            <li>✅ Diseño responsive</li>
+                        </ul>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn-small"><i class="fas fa-paint-brush"></i> Diseño</a>
+                        <a href="#" class="btn-small"><i class="fab fa-github"></i> Código</a>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Proyectos -->
-    <section id="proyectos" class="projects">
-        <div class="container">
-            <h2 class="section-title">Mis Proyectos</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="assets/images/proyecto1.jpg" alt="Proyecto 1">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" target="_blank"><i class="fas fa-link"></i></a>
-                                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>E-Commerce Platform</h3>
-                        <p>Plataforma de comercio electrónico con React, Node.js y MongoDB</p>
-                        <div class="project-tech">
-                            <span>React</span>
-                            <span>Node.js</span>
-                            <span>MongoDB</span>
-                        </div>
-                    </div>
+<!-- Sección de Metodologías y Herramientas -->
+<section id="metodologias" class="methodologies">
+    <div class="container">
+        <h2 class="section-title">Flujo de Trabajo</h2>
+        
+        <div class="workflow-timeline">
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <i class="fas fa-clipboard-list"></i>
                 </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="assets/images/proyecto2.jpg" alt="Proyecto 2">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" target="_blank"><i class="fas fa-link"></i></a>
-                                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Task Manager App</h3>
-                        <p>Aplicación de gestión de tareas con Vue.js y Firebase</p>
-                        <div class="project-tech">
-                            <span>Vue.js</span>
-                            <span>Firebase</span>
-                            <span>Tailwind</span>
-                        </div>
-                    </div>
+                <div class="timeline-content">
+                    <h3>1. Planificación</h3>
+                    <p>Gestión de proyectos con <strong>ClickUp/Trello</strong> y documentación en <strong>Confluence</strong></p>
                 </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="assets/images/proyecto3.jpg" alt="Proyecto 3">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" target="_blank"><i class="fas fa-link"></i></a>
-                                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Portfolio Personal</h3>
-                        <p>Diseño y desarrollo de portfolio con animaciones CSS</p>
-                        <div class="project-tech">
-                            <span>HTML5</span>
-                            <span>CSS3</span>
-                            <span>JavaScript</span>
-                        </div>
-                    </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <i class="fas fa-pencil-ruler"></i>
+                </div>
+                <div class="timeline-content">
+                    <h3>2. Diseño</h3>
+                    <p>Prototipado UX/UI con herramientas de diseño y presentaciones en <strong>Canva</strong></p>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <div class="timeline-content">
+                    <h3>3. Desarrollo</h3>
+                    <p>Programación asistida por <strong>IA</strong> y control de versiones con <strong>GitHub</strong></p>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <i class="fas fa-comments"></i>
+                </div>
+                <div class="timeline-content">
+                    <h3>4. Comunicación</h3>
+                    <p>Colaboración en equipo mediante <strong>Slack</strong> y reuniones ágiles</p>
                 </div>
             </div>
         </div>
-    </section>
-
+    </div>
+</section>
     <!-- Contacto -->
     <section id="contacto" class="contact">
         <div class="container">

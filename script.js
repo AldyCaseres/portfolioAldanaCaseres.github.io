@@ -156,3 +156,26 @@ window.addEventListener('scroll', () => {
     const scrolled = window.pageYOffset;
     hero.style.backgroundPositionY = scrolled * 0.5 + 'px';
 });
+
+// Filtrado de habilidades por categoría
+const filterBtns = document.querySelectorAll('.filter-btn');
+const skillCategories = document.querySelectorAll('.skills-category');
+
+filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        // Actualizar botón activo
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        
+        const filter = btn.dataset.filter;
+        
+        // Filtrar categorías
+        skillCategories.forEach(category => {
+            if (filter === 'all' || category.dataset.category === filter) {
+                category.classList.remove('hidden');
+            } else {
+                category.classList.add('hidden');
+            }
+        });
+    });
+});
