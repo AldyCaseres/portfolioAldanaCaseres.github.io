@@ -116,7 +116,7 @@ body {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #f36be3 0%, #f5a5ec 100%);
     padding: 80px 0;
 }
 
@@ -146,8 +146,8 @@ body {
 }
 
 .highlight {
-    color: #ffd700;
-    text-shadow: 0 0 10px rgba(255,215,0,0.3);
+    color: #000000;
+    text-shadow: 0 0 10px rgba(255, 0, 230, 0.3);
 }
 
 .hero-buttons {
