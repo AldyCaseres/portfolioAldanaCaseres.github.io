@@ -692,3 +692,28 @@ footer {
 .skill-card[data-category="databases"]::before {
     background: var(--database-color);
 }
+
+
+/* Estilos para el grid de GitHub */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+/* Ajuste para las tarjetas */
+#github-projects .project-card {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}

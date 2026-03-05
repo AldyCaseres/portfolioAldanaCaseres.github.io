@@ -227,108 +227,21 @@
     </div>
 </section>
 
-    <!-- Sección de Proyectos - Versión mejorada -->
+<!-- SECCIÓN DE PROYECTOS - VERSIÓN CON API -->
 <section id="proyectos" class="projects">
     <div class="container">
-        <h2 class="section-title">Proyectos Destacados</h2>
+        <h2 class="section-title">Mis Proyectos en GitHub</h2>
         
-        <div class="projects-grid">
-            <!-- Proyecto 1: Full Stack -->
-            <div class="project-card featured">
-                <div class="project-image">
-                    <img src="assets/proyecto-erp.jpg" alt="Sistema ERP">
-                    <div class="project-overlay">
-                        <span class="project-type">Full Stack</span>
-                    </div>
-                </div>
-                <div class="project-info">
-                    <h3>Sistema ERP Personalizado</h3>
-                    <p>Implementación y customización de Odoo para empresa logística</p>
-                    <div class="project-tech">
-                        <span>Python</span>
-                        <span>Odoo</span>
-                        <span>PostgreSQL</span>
-                        <span>JavaScript</span>
-                        <span>XML</span>
-                    </div>
-                    <div class="project-features">
-                        <ul>
-                            <li>✅ Módulos de inventario y facturación</li>
-                            <li>✅ Integración con APIs externas</li>
-                            <li>✅ Reportes personalizados</li>
-                            <li>✅ Migración de datos desde SQL Server</li>
-                        </ul>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="btn-small"><i class="fab fa-github"></i> Código</a>
-                        <a href="#" class="btn-small"><i class="fas fa-external-link-alt"></i> Demo</a>
-                    </div>
-                </div>
-            </div>
+        <!-- Filtros por lenguaje -->
+        <div class="skills-filter" id="filtros-lenguajes">
+            <button class="filter-btn active" data-filter="all">Todos</button>
+            <!-- Los filtros se generarán automáticamente -->
+        </div>
 
-            <!-- Proyecto 2: API REST -->
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="assets/proyecto-api.jpg" alt="API REST">
-                    <div class="project-overlay">
-                        <span class="project-type">Backend</span>
-                    </div>
-                </div>
-                <div class="project-info">
-                    <h3>API REST para E-commerce</h3>
-                    <p>Backend escalable con múltiples bases de datos</p>
-                    <div class="project-tech">
-                        <span>Java</span>
-                        <span>Spring Boot</span>
-                        <span>MySQL</span>
-                        <span>MongoDB</span>
-                        <span>JWT</span>
-                    </div>
-                    <div class="project-features">
-                        <ul>
-                            <li>✅ Autenticación JWT</li>
-                            <li>✅ Documentación Swagger</li>
-                            <li>✅ Tests unitarios JUnit</li>
-                            <li>✅ Despliegue en AWS</li>
-                        </ul>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="btn-small"><i class="fab fa-github"></i> Código</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Proyecto 3: Dashboard UX/UI -->
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="assets/proyecto-dashboard.jpg" alt="Dashboard">
-                    <div class="project-overlay">
-                        <span class="project-type">UX/UI + Frontend</span>
-                    </div>
-                </div>
-                <div class="project-info">
-                    <h3>Dashboard Analytics</h3>
-                    <p>Diseño UX/UI y desarrollo frontend</p>
-                    <div class="project-tech">
-                        <span>Figma</span>
-                        <span>React</span>
-                        <span>D3.js</span>
-                        <span>Node.js</span>
-                        <span>Canva</span>
-                    </div>
-                    <div class="project-features">
-                        <ul>
-                            <li>✅ Prototipado interactivo en Figma</li>
-                            <li>✅ Componentes reutilizables</li>
-                            <li>✅ Visualización de datos</li>
-                            <li>✅ Diseño responsive</li>
-                        </ul>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="btn-small"><i class="fas fa-paint-brush"></i> Diseño</a>
-                        <a href="#" class="btn-small"><i class="fab fa-github"></i> Código</a>
-                    </div>
-                </div>
+        <!-- Aquí se cargarán los proyectos DINÁMICAMENTE -->
+        <div class="projects-grid" id="github-projects">
+            <div class="loading-spinner">
+                <i class="fas fa-spinner fa-spin"></i> Cargando proyectos...
             </div>
         </div>
     </div>
