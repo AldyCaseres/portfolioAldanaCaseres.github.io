@@ -3,349 +3,223 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aldana Cáseres| Portfolio</title>
+    <title>Gimena Pérez | Desarrolladora</title>
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="/portfolioAldanaCaseres.github.io/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <!-- Barra de navegación -->
+
+    <!-- NAVBAR -->
     <nav class="navbar">
         <div class="nav-container">
-            <a href="#inicio" class="logo">AC Tech</a>
+            <a href="#" class="logo">
+                <img src="assets/images/logo.png" alt="GA Logo" class="logo-img">
+            </a>
+
+
             <ul class="nav-menu">
                 <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#sobre-mi">Sobre Mí</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
                 <li><a href="#habilidades">Habilidades</a></li>
                 <li><a href="#proyectos">Proyectos</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
         </div>
     </nav>
 
-    <!-- Sección Hero / Inicio -->
+    <!-- HERO -->
     <section id="inicio" class="hero">
         <div class="hero-content">
+
             <div class="hero-text">
-                <h1 class="animate-text">Hola, soy <span class="highlight">Aldana Cáseres</span></h1>
-                <h2 class="animate-text delay-1">Desarrollador Full Stack & UI Designer</h2>
-                <p class="animate-text delay-2">Transformando ideas en experiencias digitales excepcionales</p>
-                <div class="hero-buttons animate-text delay-3">
+                <h1>Hola, soy <span class="highlight">Gimena Pérez</span></h1>
+
+                <h2>
+                    Desarrolladora de Software | Frontend & Backend | Técnica en Desarrollo de Software
+                </h2>
+
+                <p>
+                    Apasionada por la tecnología, creando soluciones digitales funcionales y centradas en el usuario.
+                </p>
+
+                <div class="hero-buttons">
                     <a href="#proyectos" class="btn btn-primary">Ver Proyectos</a>
                     <a href="assets/docs/cv.pdf" class="btn btn-secondary" download>Descargar CV</a>
                 </div>
             </div>
-            <div class="hero-image animate-image">
+
+            <div class="hero-image">
                 <div class="image-wrapper">
-                    <img src="assets/images/perfil.jpg" alt="aldana" class="profile-img">
+                    <img src="assets/images/perfil.png" alt="Gimena Pérez" class="profile-img">
                 </div>
             </div>
+
         </div>
     </section>
 
-    <!-- Sobre Mí -->
+    <!-- SOBRE MI -->
     <section id="sobre-mi" class="about">
         <div class="container">
-            <h2 class="section-title">Sobre Mí</h2>
+            <h2 class="section-title">Sobre mí</h2>
+
             <div class="about-content">
+
                 <div class="about-text">
-                    <p>Soy una apasionada desarrolladora con <span id="experiencia"></span> años de experiencia creando soluciones digitales innovadoras. Mi enfoque combina la funcionalidad técnica con un diseño intuitivo y atractivo.</p>
-                    <p>Me especializo en:</p>
-                    <ul class="about-list">
-                        <li><i class="fas fa-check-circle"></i> Desarrollo de aplicaciones web escalables</li>
-                        <li><i class="fas fa-check-circle"></i> Diseño de interfaces de usuario intuitivas</li>
-                        <li><i class="fas fa-check-circle"></i> Optimización de rendimiento y SEO</li>
-                        <li><i class="fas fa-check-circle"></i> Integración de APIs y servicios cloud</li>
-                    </ul>
+                    <p>
+                        Soy Técnica en Desarrollo de Software, con conocimientos en desarrollo web,
+                        bases de datos y programación. Me enfoco en crear soluciones digitales funcionales,
+                        intuitivas y centradas en el usuario.
+                    </p>
+
+                    <p>
+                        Cuento con experiencia en distintos entornos laborales, lo que me permitió desarrollar
+                        habilidades como organización, comunicación y resolución de problemas, aplicadas al ámbito tecnológico.
+                    </p>
+
+                    <p>
+                        Me encuentro en búsqueda de mi primera oportunidad en el mundo IT para continuar creciendo
+                        profesionalmente como desarrolladora.
+                    </p>
+
                 </div>
+
                 <div class="about-stats">
                     <div class="stat-item">
-                        <span class="stat-number" data-target="4">0</span>
-                        <span class="stat-label">Años Experiencia</span>
+                        <span class="stat-number">5</span>
+                        <span class="stat-label">Proyectos realizados</span>
                     </div>
+
                     <div class="stat-item">
-                        <span class="stat-number" data-target="5">0</span>
-                        <span class="stat-label">Proyectos Completados</span>
+                        <span class="stat-number">4</span>
+                        <span class="stat-label">Tecnologías principales</span>
                     </div>
+
                     <div class="stat-item">
-                        <span class="stat-number" data-target="1">0</span>
-                        <span class="stat-label">Clientes Satisfechos</span>
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Aprendizaje continuo</span>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
 
-   <!-- Sección de Habilidades - Versión mejorada -->
-<section id="habilidades" class="skills">
-    <div class="container">
-        <h2 class="section-title">Stack Tecnológico</h2>
-        
-        <!-- Filtros de categorías -->
-        <div class="skills-filter">
-            <button class="filter-btn active" data-filter="all">Todos</button>
-            <button class="filter-btn" data-filter="backend">Backend</button>
-            <button class="filter-btn" data-filter="frontend">Frontend</button>
-            <button class="filter-btn" data-filter="databases">Bases de Datos</button>
-            <button class="filter-btn" data-filter="tools">Herramientas</button>
-            <button class="filter-btn" data-filter="ai">IA & Diseño</button>
-        </div>
+    <!-- HABILIDADES -->
+    <section id="habilidades" class="skills">
+        <div class="container">
+            <h2 class="section-title">Habilidades</h2>
 
-        <!-- Backend -->
-        <div class="skills-category" data-category="backend">
-            <h3 class="category-title"><i class="fas fa-server"></i> Backend Development</h3>
             <div class="skills-grid">
-                <div class="skill-card" data-level="90">
-                    <i class="fab fa-java"></i>
-                    <h3>Java</h3>
-                    <p>Spring Boot, Hibernate, Maven</p>
-                </div>
-                <div class="skill-card" data-level="85">
-                    <i class="fab fa-node"></i>
-                    <h3>Node.js</h3>
-                    <p>Express, NestJS </p>
-                </div>
-                <div class="skill-card" data-level="80">
-                    <i class="fab fa-php"></i>
-                    <h3>PHP</h3>
-                    <p>Laravel, WordPress</p>
-                </div>
-                <div class="skill-card" data-level="85">
-                    <i class="fab fa-python"></i>
-                    <h3>Python</h3>
-                    <p>Django</p>
-                </div>
-            </div>
-        </div>
 
-        <!-- Frontend -->
-        <div class="skills-category" data-category="frontend">
-            <h3 class="category-title"><i class="fas fa-code"></i> Frontend Development</h3>
-            <div class="skills-grid">
-                <div class="skill-card" data-level="95">
-                    <i class="fab fa-html5"></i>
-                    <h3>HTML5 & CSS3</h3>
-                    <p>Flexbox, Grid, Animaciones</p>
+                <div class="skill-card">
+                    <h3>Frontend</h3>
+                    <p>HTML, CSS, JavaScript</p>
                 </div>
-                <div class="skill-card" data-level="90">
-                    <i class="fab fa-js"></i>
-                    <h3>JavaScript</h3>
-                    <p> React, Vue, Angular</p>
-                </div>
-                <div class="skill-card" data-level="85">
-                    <i class="fas fa-paint-brush"></i>
-                    <h3>Diseño UX/UI</h3>
-                    <p>Figma, Prototipado</p>
-                </div>
-            </div>
-        </div>
 
-        <!-- Bases de Datos -->
-        <div class="skills-category" data-category="databases">
-            <h3 class="category-title"><i class="fas fa-database"></i> Bases de Datos</h3>
-            <div class="skills-grid">
-                <div class="skill-card" data-level="90">
-                    <i class="fas fa-database"></i>
-                    <h3>MySQL</h3>
-                    <p>Optimización, Stored Procedures</p>
+                <div class="skill-card">
+                    <h3>Backend</h3>
+                    <p>Java, PHP, Node.js</p>
                 </div>
-                <div class="skill-card" data-level="85">
-                    <i class="fas fa-database"></i>
-                    <h3>SQL Server</h3>
-                    <p>T-SQL, SSIS, SSRS</p>
-                </div>
-                <div class="skill-card" data-level="80">
-                    <i class="fas fa-database"></i>
-                    <h3>PostgreSQL</h3>
-                    <p>PL/pgSQL, JSON, PostGIS</p>
-                </div>
-            </div>
-        </div>
 
-        <!-- Herramientas -->
-        <div class="skills-category" data-category="tools">
-            <h3 class="category-title"><i class="fas fa-tools"></i> Herramientas & Metodologías</h3>
-            <div class="skills-grid">
                 <div class="skill-card">
-                    <i class="fab fa-github"></i>
-                    <h3>GitHub</h3>
-                    <p>Actions, Pages, Projects</p>
+                    <h3>Bases de Datos</h3>
+                    <p>MySQL, SQL Server</p>
                 </div>
-                <div class="skill-card">
-                    <i class="fas fa-tasks"></i>
-                    <h3>ClickUp</h3>
-                    <p>Gestión ágil de proyectos</p>
-                </div>
-                <div class="skill-card">
-                    <i class="fab fa-trello"></i>
-                    <h3>Trello</h3>
-                    <p>Kanban, Automation</p>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-file-alt"></i>
-                    <h3>Confluence</h3>
-                    <p>Documentación técnica</p>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-cubes"></i>
-                    <h3>Odoo</h3>
-                    <p>ERP, CRM, Módulos</p>
-                </div>
-                <div class="skill-card">
-                    <i class="fab fa-slack"></i>
-                    <h3>Slack</h3>
-                    <p>Integraciones, Bots</p>
-                </div>
-            </div>
-        </div>
 
-        <!-- IA & Diseño -->
-        <div class="skills-category" data-category="ai">
-            <h3 class="category-title"><i class="fas fa-robot"></i> IA & Diseño Creativo</h3>
-            <div class="skills-grid">
                 <div class="skill-card">
-                    <i class="fas fa-robot"></i>
-                    <h3>Programación con IA</h3>
-                    <p>Copilot, ChatGPT, Claude, Gemini</p>
+                    <h3>Herramientas</h3>
+                    <p>Git, GitHub, Trello</p>
                 </div>
+
                 <div class="skill-card">
-                    <i class="fas fa-paint-brush"></i>
-                    <h3>Canva</h3>
-                    <p>Diseño gráfico, Presentaciones</p>
+                    <h3>UX/UI</h3>
+                    <p>Figma, Canva</p>
                 </div>
-                <div class="skill-card">
-                    <i class="fas fa-pencil-ruler"></i>
-                    <h3>UX/UI Design</h3>
-                    <p>Investigación, Wireframes, Testing</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
-<!-- SECCIÓN DE PROYECTOS - VERSIÓN CON API -->
-<section id="proyectos" class="projects">
-    <div class="container">
-        <h2 class="section-title">Mis Proyectos en GitHub</h2>
-        
-        <!-- Filtros por lenguaje -->
-        <div class="skills-filter" id="filtros-lenguajes">
-            <button class="filter-btn active" data-filter="all">Todos</button>
-            <!-- Los filtros se generarán automáticamente -->
+            </div>
         </div>
+    </section>
 
-        <!-- Aquí se cargarán los proyectos DINÁMICAMENTE -->
-        <div class="projects-grid" id="github-projects">
-            <div class="loading-spinner">
-                <i class="fas fa-spinner fa-spin"></i> Cargando proyectos...
-            </div>
-        </div>
-    </div>
-</section>
+    <!-- PROYECTOS -->
+    <section id="proyectos" class="projects">
+        <div class="container">
+            <h2 class="section-title">Proyectos</h2>
 
-<!-- Sección de Metodologías y Herramientas -->
-<section id="metodologias" class="methodologies">
-    <div class="container">
-        <h2 class="section-title">Flujo de Trabajo</h2>
-        
-        <div class="workflow-timeline">
-            <div class="timeline-item">
-                <div class="timeline-icon">
-                    <i class="fas fa-clipboard-list"></i>
+            <div class="projects-grid">
+
+                <div class="project-card">
+                    <h3>TurnoFlex</h3>
+                    <p>Sistema de gestión de turnos desarrollado en JavaScript enfocado en la organización de usuarios.</p>
                 </div>
-                <div class="timeline-content">
-                    <h3>1. Planificación</h3>
-                    <p>Gestión de proyectos con <strong>ClickUp/Trello</strong> y documentación en <strong>Confluence</strong></p>
+
+                <div class="project-card">
+                    <h3>Landing Page</h3>
+                    <p>Landing page responsive desarrollada con HTML y CSS aplicando buenas prácticas de diseño.</p>
                 </div>
-            </div>
-            
-            <div class="timeline-item">
-                <div class="timeline-icon">
-                    <i class="fas fa-pencil-ruler"></i>
+
+                <div class="project-card">
+                    <h3>App Java POO</h3>
+                    <p>Aplicación de escritorio en Java basada en programación orientada a objetos.</p>
                 </div>
-                <div class="timeline-content">
-                    <h3>2. Diseño</h3>
-                    <p>Prototipado UX/UI con herramientas de diseño y presentaciones en <strong>Canva</strong></p>
-                </div>
-            </div>
-            
-            <div class="timeline-item">
-                <div class="timeline-icon">
-                    <i class="fas fa-code"></i>
-                </div>
-                <div class="timeline-content">
-                    <h3>3. Desarrollo</h3>
-                    <p>Programación asistida por <strong>IA</strong> y control de versiones con <strong>GitHub</strong></p>
-                </div>
-            </div>
-            
-            <div class="timeline-item">
-                <div class="timeline-icon">
-                    <i class="fas fa-comments"></i>
-                </div>
-                <div class="timeline-content">
-                    <h3>4. Comunicación</h3>
-                    <p>Colaboración en equipo mediante <strong>Slack</strong> y reuniones ágiles</p>
-                </div>
+
             </div>
         </div>
-    </div>
-</section>
-    <!-- Contacto -->
+    </section>
+
+    <!-- CONTACTO -->
     <section id="contacto" class="contact">
         <div class="container">
-            <h2 class="section-title">Contacto</h2>
+            <h2 class="section-title">Contáctame</h2>
+
             <div class="contact-content">
+
                 <div class="contact-info">
+
                     <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
+                        <i class="bi bi-envelope"></i>
                         <h3>Email</h3>
-                        <p>aldiicaseres@gmail.com</p>
+                        <p>gimeperez1991@gmail.com</p>
                     </div>
+
                     <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <h3>Teléfono</h3>
-                        <p>+54 9 2617 079 614</p>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
+                        <i class="bi bi-geo-alt"></i>
                         <h3>Ubicación</h3>
-                        <p>Lavalle, Mendoza, Argentina</p>
+                        <p>Mendoza, Argentina</p>
                     </div>
+                    <a href="https://wa.me/542614169237" class="whatsapp-float" target="_blank">
+    <i class="bi bi-whatsapp"></i>
+</a>
+
                 </div>
-                <form class="contact-form" id="contactForm">
+
+                <form action="https://formspree.io/f/mpqyvrny" method="POST" class="contact-form">
+
                     <div class="form-group">
-                        <input type="text" placeholder="Nombre" required>
+                        <input type="text" name="nombre" placeholder="Nombre" required>
                     </div>
+
                     <div class="form-group">
-                        <input type="email" placeholder="Email" required>
+                        <input type="email" name="email" placeholder="Email" required>
                     </div>
+
                     <div class="form-group">
-                        <textarea placeholder="Mensaje" required></textarea>
+                        <textarea name="mensaje" placeholder="Mensaje" required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+
+                    <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+
                 </form>
+
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- FOOTER -->
     <footer>
-        <div class="container">
-            <div class="social-links">
-                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-            </div>
-            <p>&copy; 2025 Aldana Cáseres. Todos los derechos reservados.</p>
-        </div>
+        <p>© 2026 Gimena Pérez - Desarrolladora</p>
     </footer>
 
-    <script src="script.js"></script>
 </body>
 </html>
